@@ -36,13 +36,18 @@
 	width: $width-100-percent;
 }
 
-.secondary_title,
+.secondary_title {
+	font-size: $font-size__blog_title;
+	font-weight: bold;
+	margin-bottom: .5em;
+	width: $width-90-percent;
+}
 .secondary_title_black {
 	font-size: $font-size__blog_title;
 	font-weight: bold;
 	margin-bottom: .5em;
 	width: $width-90-percent;
-	color: $bg-light-color;
+	// color: $bg-light-color;
 }
 
 .category_title {

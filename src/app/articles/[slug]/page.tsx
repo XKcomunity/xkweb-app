@@ -34,7 +34,11 @@ export default async function Article({ params }: Props) {
 									<SyntaxHighlighter
 										language="javascript"
 										style={irBlack}
-										customStyle={{ fontSize: "20px" }}
+										customStyle={{
+											fontSize: "16px",
+											fontFamily: "'Courier New', Courier, monospace",
+											lineHeight: "1.4",
+										}}
 									>
 										{children}
 									</SyntaxHighlighter>
@@ -54,6 +58,9 @@ export default async function Article({ params }: Props) {
 								<blockquote className={styles.shortDescription}>
 									{children}
 								</blockquote>
+							),
+							img: ({ src, alt }) => (
+								<img src={src} alt={alt} className={styles.image} />
 							),
 						}}
 					/>
