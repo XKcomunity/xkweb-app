@@ -9,7 +9,6 @@ import Link from "next/link";
 import { Article } from "type";
 
 export default async function Articles() {
-
 	const articlesData: Promise<Article[]> = await getArticles();
 	const articles = await articlesData;
 
