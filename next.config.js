@@ -1,8 +1,24 @@
+const path = require("path");
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
-}
+	experimental: {
+		// appDir: true,
+		swcMinify: true,
+	},
 
-module.exports = nextConfig
+	sassOptions: {
+		includePaths: [path.join(__dirname, "styles")],
+	},
+	images: {
+		remotePatterns: [
+			{
+				protocol: "https",
+				hostname: "media.graphassets.com",
+				port: "",
+				pathname: "/**",
+			},
+		],
+	},
+};
+
+module.exports = nextConfig;
