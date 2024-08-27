@@ -76,7 +76,7 @@ export const getSnippet = async (id: string) => {
 	`;
 
 	const results: any = await graphContent.request(query, { id });
-  const snippet = results.snippet;
+	const snippet = results.snippet;
 
 	return snippet;
 };
