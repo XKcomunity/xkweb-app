@@ -1,0 +1,24 @@
+@import "../../../app/mixins";
+@import "../../../app/variables";
+
+.recent_nippets__wrapper {
+    width: $width-80-percent;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 1em;
+    gap: 2rem;
+    margin: 0 auto;
+    margin-bottom: 3em;
+}
+
+.recent_snippet__card {
+    @include glass;
+    @include flex-v-center;
+    color: $white-color;
+    gap: 1rem;
+}
+
+.recent_snippet_text {
+    font-weight: 300;
+    font-size: 1.4em;
+}

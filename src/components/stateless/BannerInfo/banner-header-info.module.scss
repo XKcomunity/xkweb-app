@@ -1,0 +1,38 @@
+@import "../../../app/mixins";
+@import "../../../app/variables";
+
+.banner_header_wrapper {
+  width: $width-100-percent;
+  @include total-center;
+  color: $white-color;
+  background: linear-gradient(-45deg, $primary-color, $bg-color, $secondary-color);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  border-radius: 10px;
+}
+
+.article_reference,
+.author_date,
+.author_level {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+  padding-bottom: .5em;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.banner_content {
+  width: $width-90-percent;
+}
+

@@ -1,0 +1,39 @@
+@import "../../../app/mixins";
+@import "../../../app/variables";
+
+
+.hint_wrapper {
+    width: $width-100-percent;
+    margin: 7em 0em 7em 0em;
+    padding: 2em;
+}
+
+.hint_container {
+    width: $width-80-percent;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    place-items: center;
+    gap: 1em;
+    color: #fff;
+}
+
+.hint_icon {
+    height: 3em;
+    width: 3em;
+}
+
+.hint_card {
+    @include glass;
+    min-height: 280px;
+}
+
+
+.hint_card__title {
+    font-size: $font-size__h3;
+}
+
+.hint_card__paragraph {
+    font-size: $font-size__paragraph;
+    font-weight: 100;
+}

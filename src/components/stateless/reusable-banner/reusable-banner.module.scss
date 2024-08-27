@@ -1,0 +1,17 @@
+@import "../../../app/mixins";
+@import "../../../app/variables";
+
+.reusable_banner_wrapper {
+    width: $width-100-percent;
+    height: 300px;
+    @include total-center;
+    color: $white-color;
+    flex-direction: column;
+    background-image: url(../../../../public/images/bg/planets.jpg);
+    background-size: cover;
+}
+
+.reusable_banner_wrapper_text {
+    font-size: $font-size__title;
+}
+

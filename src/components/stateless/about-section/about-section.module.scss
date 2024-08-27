@@ -1,0 +1,39 @@
+@import "../../../app/mixins";
+@import "../../../app/variables";
+
+.main_container {
+	width: $width-90-percent;
+	padding: 1em;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	gap: 2em;
+}
+
+.main_text {
+	color: #fff;
+	font-size: $font-size__h3;
+	font-weight: bold;
+	span {
+	   color: $secondary-color;
+	}
+}
+
+.main_subtitle_text {
+	font-size: $font-size__h4;
+	margin: 1em 0em 1em 0em;
+	color: $white-color;
+}
+
+
+.button {
+	@include outline-button;
+}
+
+.button:hover {
+	@include outline-button-hover;
+}
+
+.main_about_glass {
+	@include glass;
+}

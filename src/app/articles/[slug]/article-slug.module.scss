@@ -1,0 +1,47 @@
+@import "../../variables";
+@import "../../mixins";
+.blockcode {
+	margin-top: 15px;
+	overflow-x: auto; // Permite scroll horizontal en caso de desbordamiento
+}
+
+.title {
+	font-size: $font-size__title;
+	color: $text-color;
+	margin: 1.5em 0 0.8em 0;
+}
+
+.subtitle {
+	color: $text-color;
+	font-size: $font-size__h3;
+	margin: 1.5em 0 0.8em 0;
+}
+
+.shortDescription {
+	font-size: $font-size__h4;
+	margin: 1.5em 0 0.8em 0;
+}
+
+.intro {
+	margin: 2em 0 1.5em 0;
+	text-align: center;
+}
+
+.text {
+	font-size: $font-size__h6;
+	margin-bottom: 15px;
+}
+
+.conclusion {
+	color: $text-color;
+	font-size: $font-size__h2;
+	margin: 2em 0 1em;
+}
+
+.image {
+	max-width: 100%; // Asegura que la imagen no se salga del contenedor
+	height: auto;
+	display: block;
+	margin-bottom: 50px;
+	margin-top: 50px// Centra la imagen dentro de su contenedor
+}

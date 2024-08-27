@@ -1,0 +1,55 @@
+@import "mixins";
+@import "variables";
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200&display=swap");
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	background-color: $bg-color;
+	max-width: $width-100-percent;
+	overflow-x: hidden;
+	font-family: "Source Sans Pro", sans-serif;
+	scroll-behavior: smooth;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+.main_title_wrapper {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+
+	.main_title {
+	    @include total-center;
+		margin-top: 1em;
+		margin-bottom: 50px;
+		color: $white-color;
+		font-size: $font-size__h1;
+		font-weight: 900;
+	}
+}
+
+.grid {
+	width: $width-50-percent;
+	margin: 0 auto;
+	padding: $padding-2;
+}
+
+
+@media (prefers-color-scheme: dark) {
+	html {
+		color-scheme: dark;
+	}
+}

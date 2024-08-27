@@ -1,0 +1,20 @@
+@import "../variables";
+@import "../mixins";
+
+
+.container {
+	padding: 3em 0;
+	width: $width-90-percent;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	gap: 10px;
+	justify-content: center; // Centra el contenido en el grid
+	max-width: 90%;
+}
+
+.articleCardWrapper {
+	width: 100%;
+	margin-bottom: 1.3em;
+	max-width: 100%;
+}

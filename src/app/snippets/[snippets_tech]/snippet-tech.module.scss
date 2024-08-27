@@ -1,0 +1,51 @@
+@import "../../variables";
+@import "../../mixins";
+
+.snippet_tech_wrapper {
+	width: $width-100-percent;
+	@include total-center;
+}
+
+.snippet_tech_content {
+	width: $width-60-percent;
+	@include total-center;
+	flex-wrap: wrap;
+	gap: 1em;
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+.pils_button {
+	@include pilsButton;
+}
+
+.pils_button:hover {
+	background-color: $secondary-color;
+	color: $bg-color;
+	transition: 0.5s ease-in-out;
+}
+
+.snippet_card_container {
+	@include total-center;
+	flex-direction: column;
+}
+
+.snippet_card {
+	@include snippetCard;
+}
+
+.snippet_card_heading {
+	@include flex;
+	gap: 1em;
+	margin-bottom: 1em;
+}
+
+.snippet_card_img {
+	width: 50px;
+	height: 40px;
+}
+
+.snippet_card_paragraph {
+	font-weight: 500;
+	font-size: $font-size__paragraph;
+}

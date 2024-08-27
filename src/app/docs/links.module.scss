@@ -1,0 +1,67 @@
+@import "../variables";
+@import "../mixins";
+
+
+.banner_wrapper {
+  width: $width-100-percent;
+  @include flex-h-center;
+  color: $white-color;
+  flex-direction: column;
+  background-image: url(../../../public/images/bg/planets.jpg);
+  background-size: cover;
+  padding: 5em;
+}
+
+.title {
+  font-size: $font-size__h1;
+}
+
+.subtitle {
+  width: 50%;
+}
+
+.link_slogan_content {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.link_slogan_img {
+  object-fit: cover;
+}
+
+.link_slogan {
+  color: $white-color;
+}
+
+.wrapper__links {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 4em;
+}
+
+
+
+// Estilos del select personalizado
+.link__select {
+  background-color: $primary-color;
+  border-radius: 4px;
+  border: none;
+  color: black;
+  font-size: 16px;
+  padding: 8px 10px;
+  width: 280px;
+  text-align: center;
+  margin: 1em;
+}
+
+.flex {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

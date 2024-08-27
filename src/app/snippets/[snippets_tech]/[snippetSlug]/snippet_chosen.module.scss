@@ -1,0 +1,27 @@
+@import "../../../variables";
+@import "../../../mixins";
+
+.containerFluid {
+	width: $width-100-percent;
+	padding: 2em;
+	margin-top: 4em;
+}
+
+.container {
+	padding: 2em;
+	color: $text-color;
+	background-color: $bg-light-color;
+	width: $width-90-percent;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+.snippet_article_content {
+	width: 95%;
+}
+
+.article_text {
+	@include articleText;
+}
+
+

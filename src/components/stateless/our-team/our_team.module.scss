@@ -1,0 +1,76 @@
+@import "../../../app/mixins";
+@import "../../../app/variables";
+
+.our_team_container {
+	width: $width-100-percent;
+	margin: 0 auto;
+	color: $white-color;
+	padding: 1em 2em;
+	gap: 2em;
+	display: flex;
+	justify-content: center;
+    flex-wrap: wrap;
+}
+
+.our_team_card {
+	@include glass;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+}
+
+.our_team_card:hover {
+	background: linear-gradient(to right, #016cec, #00b5f7);
+}
+
+.our_team_card_dashed,
+.our_team_img,
+.our_team_icon {
+    border-radius: $width-50-percent;
+}
+
+.our_team_card_dashed {
+    position: relative;
+    margin-bottom: 50px;
+    border: 4px dashed transparent;
+    transition: padding .3s;
+    padding: 12px;
+    border: 4px dashed #fff;
+}
+
+
+ .our_team_img {
+	width: 130px;
+    height: 130px;
+}
+
+.our_team_icon {
+	position: absolute;
+    bottom: 0;
+    left: $width-50-percent;
+    transform: translate(-50%,50%);
+    width: 60px;
+    height: 60px;
+    @include total-center;
+    background: linear-gradient(to right, #016cec, #00b5f7);
+    color: #fff;
+    font-size: 24px;
+}
+
+.our_team_card_info_info {
+  text-align: center;
+}
+
+.our_team_icon_content {
+    @include flex-h-center;
+    gap: 1em;
+    font-size: 1.4em;
+    padding-top: .5em;
+}
+
+.ourTeam_sotial_network {
+    font-size: 1.2em;
+}

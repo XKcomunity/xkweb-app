@@ -1,0 +1,132 @@
+@import "../../../app/variables";
+@import "../../../app/mixins";
+
+.navbar_wrapper {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	@include glass;
+	width: $width-100-percent;
+	height: 8vh;
+	@include flex-v-center;
+	justify-content: space-between;
+	border: none;
+	border-radius: none;
+}
+
+.navbar_logo {
+	color: $white-color;
+	margin-left: 4%;
+	font-size: 1.7em;
+}
+
+.navbar_pages {
+	width: $width-40-percent;
+	margin-right: 5%;
+}
+
+.navbar_list {
+	display: flex;
+	justify-content: space-around;
+	color: $white-color;
+	font-size: 1.3rem;
+	list-style: none;
+	flex-wrap: wrap;
+	font-weight: 100;
+}
+
+.navbar_item:hover {
+	cursor: pointer;
+	color: $secondary-color;
+}
+
+.mobile_logo_image {
+	display: none;
+}
+
+.drawer_logo_wrapper {
+	@include total-center;
+	width: $width-100-percent;
+	height: 130px;
+}
+
+.line {
+	color: white;
+	line-height: 5px;
+}
+
+.drawer_links {
+	@include total-center;
+	margin-top: 5vh;
+
+	.list_links {
+		list-style: none;
+		.link {
+			color: white;
+			font-size: $font-size__h4;
+		}
+
+		.link:nth-child(n + 1) {
+			margin-top: 10px;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.mobile_logo_image {
+		@include flex-v-center;
+		display: block;
+		cursor: pointer;
+		color: $white-color;
+		border-radius: 5px;
+		margin-right: 4%;
+	}
+}
+
+@media (max-width: 600px) {
+	.logo_image {
+		display: none;
+	}
+}
+
+@media (max-width: 1200px) {
+	.navbar_pages {
+		width: $width-50-percent;
+	}
+}
+@media (max-width: 1024px) {
+	.navbar_pages {
+		width: $width-65-percent;
+	}
+	.navbar_list {
+		font-size: 1.3rem;
+	}
+}
+
+@media (max-width: 950px) {
+	.navbar_pages {
+		width: 55%;
+	}
+	.navbar_list {
+		font-size: 1.2rem;
+	}
+}
+@media (max-width: 800px) {
+	.navbar_pages {
+		width: $width-60-percent;
+	}
+	.navbar_list {
+		font-size: 1.1rem;
+	}
+
+	.logo_image {
+		width: 120px;
+		height: 90px;
+	}
+}
+
+@media (max-width: 600px) {
+	.navbar_pages {
+		display: none;
+	}
+}

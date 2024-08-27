@@ -1,0 +1,65 @@
+@import "../../../app/mixins";
+@import "../../../app/variables";
+
+.main_title_wrapper {
+	width: $width-90-percent;
+	margin-right: auto;
+	margin-left: auto;
+
+	.main_title {
+	  @include total-center;
+		margin: 1.5em 0em 1em 0em;
+		color: $white-color;
+		font-size: $font-size__h1;
+		font-weight: 200;
+  	font-style: italic;
+	}
+}
+
+.titleWrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title {
+   font-size: $font-size__title;
+   color: $white-color;
+	 text-align: center;
+	 border-bottom: 5px solid $secondary-color;
+	 margin:  2em 0em 2em 0em;
+	}
+
+.secondary_title_container {
+	width: $width-100-percent;
+}
+
+.secondary_title {
+	font-size: $font-size__blog_title;
+	font-weight: bold;
+	margin-bottom: .5em;
+	width: $width-90-percent;
+}
+.secondary_title_black {
+	font-size: $font-size__blog_title;
+	font-weight: bold;
+	margin-bottom: .5em;
+	width: $width-90-percent;
+}
+
+.category_title {
+    color: $white-color;
+    font-weight: 400;
+    margin: 0em 2em 1.5em 2em;
+}
+
+.secondary_title_container {
+	width: $width-100-percent;
+}
+
+.secondary_title_black {
+	color: $text-color;
+	margin: 1em 0 .5em;
+}

@@ -1,0 +1,128 @@
+@import "variables";
+
+@mixin button {
+	width: 200px;
+	padding: 15px 20px;
+	border-radius: 10px;
+	border: none;
+	text-transform: uppercase;
+	background-color: $secondary-color;
+	font-weight: bold;
+	font-size: 0.8em;
+	cursor: pointer;
+}
+
+@mixin outline-button {
+	@include button;
+	background: none;
+	color: $white-color;
+	border: 1px solid #56dbff;
+}
+
+@mixin snippetButton {
+	@include button;
+	background: none;
+	color: $light-color;
+}
+
+@mixin pilsButton {
+	border: none;
+	border-radius: 10px;
+	@include glass;
+	padding: 10px 20px;
+	color: $white-color;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+@mixin scrollTopButton {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: $secondary-color;
+	color: $bg-color;
+	font-size: 2em;
+	border: none;
+	border-radius: 10%;
+	width: 40px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	z-index: 1;
+	&:hover {
+		background-color: $primary-color;
+	}
+}
+
+@mixin outline-button-hover {
+	background-color: $secondary-color;
+	color: $bg-color;
+}
+
+@mixin flex {
+	display: flex;
+}
+
+@mixin flex-h-center {
+	@include flex;
+	justify-content: center;
+}
+
+@mixin total-center {
+	@include flex-h-center;
+	@include flex-v-center;
+}
+
+@mixin flex-v-center {
+	@include flex;
+	align-items: center;
+}
+
+@mixin flex-column {
+	@include flex;
+	flex-direction: column;
+}
+
+@mixin paragraph {
+	font-weight: 500;
+	font-size: $font-size__paragraph;
+}
+
+@mixin cardDescription {
+	@include paragraph;
+	color: $grey-color;
+	margin: .5rem 0rem 2rem 0rem;
+}
+
+@mixin articleText {
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 400;
+	color: $dark-gray-color;
+}
+
+@mixin snippetCard {
+	width: 80%;
+	color: $white-color;
+	@include glass;
+	padding: 2em;
+	border-radius: 10px;
+	margin: 1em 0em 1em 0em;
+}
+
+@mixin glass {
+	background-color: $dark-alt-color;
+	backdrop-filter: blur(16px) saturate(180%);
+	background-color: rgba(17, 25, 40, 0.25);
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.125);
+	padding: 2em;
+	filter: drop-shadow(0 30px 10px rgba(0, 0, 0, 0.125));
+}
+
+@mixin grid {
+	width: 90%;
+	@include flex-h-center;
+}

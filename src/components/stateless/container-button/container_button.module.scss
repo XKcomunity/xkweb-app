@@ -1,0 +1,33 @@
+@import "../../../app/variables";
+@import "../../../app/mixins";
+
+.container_button {
+	width: $width-100-percent;
+	margin: 0 auto;
+	@include flex-h-center;
+	margin-top: 20px;
+}
+
+.button {
+	@include outline-button;
+	width: 300px;
+	padding: 20px;
+	font-size: 1em;
+	margin-top: 50px;
+}
+
+.button:hover {
+	@include outline-button-hover;
+}
+
+@media screen and (max-width: 1024px) {
+	.button {
+		margin-top: 100px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.button {
+		margin-top: 150px;
+	}
+}

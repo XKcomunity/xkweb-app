@@ -1,0 +1,41 @@
+@import "../../../app/mixins";
+@import "../../../app/variables";
+
+.slider {
+	position: relative;
+	width: $width-90-percent;
+	height: 60dvh;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 1.5rem;
+	margin-bottom: 100px;
+	border-radius: 10px;
+}
+
+.right_arrow_container {
+	position: absolute;
+	cursor: pointer;
+	right: 0;
+	@include total-center;
+	width: 55px;
+	border-radius: $width-50-percent;
+	background-color: rgba($color: $dark-alt-color, $alpha: 0.7);
+}
+
+.left_arrow_container {
+	position: absolute;
+	cursor: pointer;
+	left: 0;
+	@include total-center;
+	width: 55px;
+	border-radius: $width-50-percent;
+	background-color: rgba($color: $dark-alt-color, $alpha: 0.7);
+}
+
+@media screen and (max-width: 768px) {
+	.slider {
+		width: $width-80-percent;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

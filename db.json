@@ -1,0 +1,241 @@
+{
+	"technologies": [
+		{
+			"id": 1,
+			"tech": "Vue",
+			"category": "Frameworks",
+			"img": "/images/tech-logos/vue.png"
+		},
+		{
+			"id": 2,
+			"tech": "HTML",
+			"category": "Web-Design",
+			"img": "/images/tech-logos/html.png"
+		},
+		{
+			"id": 3,
+			"tech": "CSS",
+			"category": "Web-Design",
+			"img": "/images/tech-logos/css.png"
+		},
+		{
+			"id": 4,
+			"tech": "Angular",
+			"category": "Frameworks",
+			"img": "/images/tech-logos/angular.png"
+		},
+		{
+			"id": 5,
+			"tech": "React",
+			"category": "Frameworks",
+			"img": "/images/tech-logos/React.png"
+		},
+		{
+			"id": 6,
+			"tech": "Responsive",
+			"category": "Web-Design",
+			"img": "/images/tech-logos/node.png"
+		},
+		{
+			"id": 7,
+			"tech": "JavaScript",
+			"category": "Lenguajes",
+			"img": "/images/tech-logos/js.jpeg"
+		},
+		{
+			"id": 8,
+			"tech": "Java",
+			"category": "Lenguajes",
+			"img": "/images/tech-logos/java.png"
+		},
+		{
+			"id": 9,
+			"tech": "Python",
+			"category": "Lenguajes",
+			"img": "/images/tech-logos/python.png"
+		}
+	],
+	"docs": [
+		{
+      "id": 1,
+      "title": "Recursos para practicar Javascript",
+      "category": "Lenguajes",
+      "links": [
+        {
+          "id": 1,
+          "name": "javascript-30",
+          "url": "https://javascript30.com/"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "CSS-tricks",
+      "category": "Web-Design",
+      "links": [
+        {
+          "id": 1,
+          "name": "CSS-Tricks",
+          "url": "https://css-tricks.com/"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Patrones de Diseño",
+      "category": "Patrones de Diseño",
+      "links": [
+        {
+          "id": 1,
+          "name": "Refactoring Guru",
+          "url": "https://refactoring.guru/"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Inpiracion",
+      "category": "Web-Design",
+      "links": [
+        {
+          "id": 1,
+          "name": "Dribble",
+          "url": "https://dribbble.com/"
+        },
+        {
+          "id": 2,
+          "name": "Awwwards",
+          "url": "https://www.awwwards.com/"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Combinar Tipografías",
+      "category": "Web-Design",
+      "links": [
+        {
+          "id": 1,
+          "name": "Font Joy",
+          "url": "https://fontjoy.com/"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "SVG Waves",
+      "category": "Web-Design",
+      "links": [
+        {
+          "id": 1,
+          "name": "Get-Waves-IO",
+          "url": "https://getwaves.io/"
+        },
+        {
+          "id": 2,
+          "name": "Smoth Ie",
+          "url": "https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "LightBox",
+      "category": "Web-Design",
+      "links": [
+        {
+          "id": 1,
+          "name": "LightBox",
+          "url": "https://simplelightbox.com/"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Rotar Textos",
+      "category": "Web-Design",
+      "links": [
+        {
+          "id": 1,
+          "name": "Text-Rotate",
+          "url": "https://www.cssportal.com/css3-text-rotate-generator/"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Paleta de colores",
+      "category": "Web-Design",
+      "links": [
+        {
+          "id": 1,
+          "name": "Design Seeds",
+          "url": "https://www.design-seeds.com/"
+        },
+        {
+          "id": 2,
+          "name": "Colorhunt",
+          "url": "https://colorhunt.co/"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Generadores",
+      "category": "Web-Design",
+      "links": [
+        {
+          "id": 1,
+          "name": "Box-Shadow",
+          "url": "https://www.cssmatic.com/box-shadow"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Degradados",
+      "category": "Web-Design",
+      "links": [
+        {
+          "id": 1,
+          "name": "UI-Gradients",
+          "url": "https://uigradients.com/#PastelOrangeattheSun"
+        },
+        {
+          "id": 2,
+          "name": "Grabient",
+          "url": "https://www.grabient.com/"
+        },
+        {
+          "id": 3,
+          "name": "Web-Gradients",
+          "url": "https://webgradients.com/"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Sliders",
+      "category": "Web-Design",
+      "links": [
+        {
+          "id": 1,
+          "name": "Swiper-JS",
+          "url": "https://swiperjs.com"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Cli-Path",
+      "category": "Web-Design",
+      "links": [
+        {
+          "id": 1,
+          "name": "Clippy",
+          "url": "https://bennettfeely.com/clippy/"
+        }
+      ]
+    }
+	]
+}

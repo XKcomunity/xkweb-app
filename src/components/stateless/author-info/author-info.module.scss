@@ -1,0 +1,22 @@
+@import "../../../app/mixins";
+@import "../../../app/variables";
+
+.author_wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 30px;
+  gap: 1em;
+  border-radius: 10px;
+  padding: 2em 0em;
+}
+
+.author_name {
+  font-size: $font-size__title;
+}
+
+.author_sotialnetworks {
+  display: flex;
+  gap: 1em;
+  margin-top: .5em;
+}

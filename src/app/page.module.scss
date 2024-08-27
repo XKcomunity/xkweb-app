@@ -1,0 +1,12 @@
+@import "./mixins";
+@import "./variables";
+
+.main_wrapper {
+	width: $width-100-percent;
+	height: $width-100-percent;
+	background-image: url(../../public/images/bg/planets.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}

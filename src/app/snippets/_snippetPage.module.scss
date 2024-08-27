@@ -1,0 +1,109 @@
+@import "../variables";
+@import "../mixins";
+
+.main_snippet {
+	width: $width-80-percent;
+	@include total-center;
+	flex-direction: column;
+	margin: 0 auto;
+	color: $white-color;
+	margin-top: 5em;
+	@media screen and (max-width: 550px){
+		width: $width-90-percent;
+	}
+}
+
+.h1 {
+	color: $white-color;
+	font-size: $font-size__h1;
+	.h1_span {
+		color: $secondary-color;
+	}
+	@media screen and (max-width: 550px){
+		align-self: flex-start;
+	}
+}
+
+.headings_snippets_text {
+	color: $white-color;
+	margin: 1rem 0rem 1rem 0rem;
+	font-size: $font-size__h5;
+}
+
+
+.headings_links_container {
+	width: $width-80-percent;
+	@include flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 2em;
+	margin-top: 3em;
+	@media screen and (max-width: 550px){
+		gap: 1em;
+	}
+}
+
+.snippetHeadingLinks {
+	@include snippetButton;
+}
+
+.snippetHeadingLinks:hover {
+	background-color: $secondary-color;
+	color: $bg-color;
+	transition: all 0.5s ease-in-out;
+}
+
+.divider {
+	width: $width-80-percent;
+	height: 1px;
+	background-color: $dark-alt-color;
+	margin: 2em;
+}
+
+//  TEACH CARD
+
+.tech_cards_wrapper {
+	@include flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: $width-80-percent;
+	margin: 0 auto;
+	margin-bottom: 5em;
+	gap: 1rem;
+}
+
+.techcard_container {
+	cursor: pointer;
+	margin: 0 auto;
+	margin-top: 3em;
+}
+
+.tech_card {
+	width: 15em;
+	height: 3.8em;
+	@include flex-v-center;
+	gap: 1rem;
+	background-color: $dark-alt-color;
+	border-radius: 1.3rem;
+	color: $white-color;
+}
+
+.tech_card_img_content {
+	width: 4em;
+	height: $width-100-percent;
+	border-radius: 1.1rem;
+	@include glass;
+	border: none;
+	@include total-center;
+}
+
+.tech_card_title_content {
+	@include flex-h-center;
+	width: $width-50-percent;
+}
+
+.tech_card_title {
+	font-weight: lighter;
+	font-size: 1.5em;
+}
+
