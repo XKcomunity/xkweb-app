@@ -2,14 +2,14 @@ const path = require("path");
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	experimental: {
-		appDir: true,
+		// appDir: true,
 		swcMinify: true,
 	},
 
 	sassOptions: {
 		includePaths: [path.join(__dirname, "styles")],
 	},
-  images: {
+	images: {
 		remotePatterns: [
 			{
 				protocol: "https",
