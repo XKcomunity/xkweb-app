@@ -25,7 +25,7 @@ export const ArticleCard = ({
 			? shortDescription.slice(0, 130) + "..."
 			: shortDescription;
 	const truncatedArticleTitle =
-		title.length > 35 ? title.slice(0, 35) + "..." : title;
+		title.length > 45 ? title.slice(0, 45) + "..." : title;
 	return (
 		<>
 			<motion.div whileHover={{ scale: 1.02 }}>
