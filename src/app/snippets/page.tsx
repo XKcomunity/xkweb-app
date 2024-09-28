@@ -2,7 +2,7 @@
 import { useFetchTechnologies } from "@/hooks/useFetchTechnologies";
 import styles from "./_snippetPage.module.scss";
 import SnippetCategoryLinks from "./SnippetCategoryLinks";
-import SnippetTechCard from "./snippetTechCard";
+import SnippetTechCard from "./SnippetTechCard";
 import MainTitleSection from "../../components/stateless/titles/MainTitleSection";
 
 const data = {
@@ -15,7 +15,6 @@ const data = {
 };
 
 export default function Snippet() {
-
 	const {
 		technologies,
 		setSelectedCategory,
@@ -23,7 +22,7 @@ export default function Snippet() {
 		setFilteredTechnologies,
 	} = useFetchTechnologies("http://localhost:3001/technologies");
 
-	const handleCategoryClick = (category) => {
+	const handleCategoryClick = (category: never) => {
 		setSelectedCategory(category);
 		if (category === null) {
 			setFilteredTechnologies(technologies);

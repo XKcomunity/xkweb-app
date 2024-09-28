@@ -40,7 +40,7 @@ export default async function Article({ params }: Props) {
 											lineHeight: "1.4",
 										}}
 									>
-										{children}
+										{typeof children === "string" ? children : String(children)}
 									</SyntaxHighlighter>
 								</code>
 							),
@@ -59,8 +59,14 @@ export default async function Article({ params }: Props) {
 									{children}
 								</blockquote>
 							),
-							img: ({ src, alt }) => (
-								<img src={src} alt={alt} className={styles.image} />
+							img: ({ src }) => (
+								<img
+									src={src}
+									alt="Snippet image"
+									className={styles.image}
+									width={600}
+									height={400}
+								/>
 							),
 						}}
 					/>

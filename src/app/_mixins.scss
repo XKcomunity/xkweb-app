@@ -104,10 +104,10 @@
 }
 
 @mixin snippetCard {
-	width: 80%;
+	width: 50%;
 	color: $white-color;
 	@include glass;
-	padding: 2em;
+	padding: 1em;
 	border-radius: 10px;
 	margin: 1em 0em 1em 0em;
 }

@@ -8,7 +8,7 @@ const graphContent = new GraphQLClient(url, {
 export const getSnippets = async () => {
 	const query = gql`
 		query {
-			snippets {
+			snippets(orderBy: createdAt_DESC) {
 				id
 				title
 				author {
@@ -76,7 +76,7 @@ export const getSnippet = async (id: string) => {
 	`;
 
 	const results: any = await graphContent.request(query, { id });
-  const snippet = results.snippet;
+	const snippet = results.snippet;
 
 	return snippet;
 };

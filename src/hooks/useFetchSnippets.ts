@@ -14,9 +14,14 @@ export const useFetchSnippets = () => {
 			const cardsResponse = await getSnippets();
 			const cardsJson = await cardsResponse;
 
-			const snippets_type: Snippet[] = cardsJson.filter(
-				(item: Snippet) => item.tech === params?.snippets_tech
-			);
+			console.log("Loaded snippets:", cardsJson);
+
+			const snippets_type: Snippet[] = params?.snippets_tech
+				? cardsJson.filter(
+						(item: Snippet) => item.tech === params.snippets_tech
+				  )
+				: cardsJson;
+
 			setSnippets(snippets_type);
 			setFilteredSnippets(snippets_type);
 		}
@@ -24,6 +29,16 @@ export const useFetchSnippets = () => {
 		fetchSnippetCards();
 	}, [params?.snippets_tech]);
 
+	useEffect(() => {
+		if (selectedTech === "") {
+			setFilteredSnippets(snippets);
+		} else {
+			const filtered = snippets.filter(
+				(item: Snippet) => item.topic === selectedTech
+			);
+			setFilteredSnippets(filtered);
+		}
+	}, [selectedTech, snippets]);
 	return {
 		snippets,
 		selectedTech,

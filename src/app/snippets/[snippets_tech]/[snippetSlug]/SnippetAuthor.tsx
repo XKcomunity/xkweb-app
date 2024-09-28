@@ -1,8 +1,9 @@
+import { Author } from "type";
 import styles from "./snippet_chosen.module.scss";
 import Link from "next/link";
 
 type Props = {
-	author: string;
+	author: Author;
 	date: string;
 };
 
