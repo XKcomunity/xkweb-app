@@ -36,16 +36,25 @@
 
 .snippet_card_heading {
 	@include flex;
-	gap: 1em;
-	margin-bottom: 1em;
+	gap: 1.5em;
+	margin-bottom: .5em;
 }
 
+
+
 .snippet_card_img {
-	width: 50px;
-	height: 40px;
+	width: 200px;
+	height: 150px;
+}
+.snippet_card_heading_text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .snippet_card_paragraph {
 	font-weight: 500;
+	margin-top: 10px;
 	font-size: $font-size__paragraph;
+	font-weight: 400;
 }

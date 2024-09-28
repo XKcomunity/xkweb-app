@@ -17,18 +17,17 @@ export default function SnippetCard({ snippetsType }: Props) {
 							<Image
 								src={snippet.img.url}
 								className={styles.snippet_card_img}
-								alt=""
-								width={50}
-								height={50}
+								alt="Snippet card image"
+								width={100}
+								height={100}
 							/>
 							<div className={styles.snippet_card_heading_text}>
 								<h3>{snippet.title}</h3>
-								<h5>{snippet.subTitle}</h5>
+								<p className={styles.snippet_card_paragraph}>
+									{snippet.description.slice(0, 300)}...
+								</p>
 							</div>
 						</div>
-						<p className={styles.snippet_card_paragraph}>
-							{snippet.description.slice(0, 200)}...
-						</p>
 					</Link>
 				</article>
 			))}
