@@ -1,7 +1,7 @@
 "use client";
 import styles from "./recent_snippets.module.scss";
 // import react from "../../../../public/images/tech-logos/react.png";
-import Image from "next/image";
+// import Image from "next/image";
 
 export const RecentSnippetCard = () => {
 	return (

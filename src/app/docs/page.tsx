@@ -1,8 +1,7 @@
 "use client";
 import { useFetchLinks } from "@/hooks/useFetchLinks";
 import { TitleComponent } from "@/components/stateless/titles/TitleComponent";
-import { Docs } from "type";
-import PdfCard from "@/components/stateless/pdf/PdfCard";
+import type { Docs } from "type";
 import styles from "./links.module.scss";
 import robot from "../../../public/images/robots/apolo-removebg-preview.png";
 import Image from "next/image";

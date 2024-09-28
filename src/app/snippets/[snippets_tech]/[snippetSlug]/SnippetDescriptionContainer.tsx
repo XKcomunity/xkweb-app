@@ -2,6 +2,7 @@ import { SecondaryTitle } from "@/components/stateless/titles/SecondaryTitle";
 import SnippetArticle from "./SnippetArticle";
 import SnippetAuthor from "./SnippetAuthor";
 import styles from "./snippet_chosen.module.scss";
+import { Snippet } from "type";
 
 type Props = {
 	snippet: Snippet;
@@ -14,13 +15,7 @@ export default function SnippetDescriptionContainer({ snippet }: Props) {
 				<div className={styles.container}>
 					<SecondaryTitle title={snippet.title} />
 					<SnippetAuthor author={snippet.author} date={snippet.date} />
-					<SnippetArticle
-						description={snippet.description}
-						// code={{
-						// 	title: "",
-						// 	code: "",
-						// }}
-					/>
+					<SnippetArticle description={snippet.description} />
 				</div>
 			</main>
 		</>

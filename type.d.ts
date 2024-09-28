@@ -58,7 +58,7 @@ type Docs = {
 	id: number;
 	title: string;
 	category: string;
-	links: string;
+	links: Docs[];
 	name: string;
 	url: string;
 };
