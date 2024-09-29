@@ -5,16 +5,20 @@ import { HintSection } from "@/components/stateless/hint-section/HintSection";
 import { TitleComponent } from "@/components/stateless/titles/TitleComponent";
 import { SliderCard } from "@/components/stateless/slider/SliderCard";
 import { CategoryTitle } from "@/components/stateless/titles/CategoryTitle";
-import { RecentSnippets } from "@/components/stateless/recent-snippets/RecentSnippets";
 import ContainerButton from "@/components/stateless/container-button/ContainerButton";
 import { OurTeam } from "@/components/stateless/our-team/OurTeam";
 import { getArticles } from "../../hygraph/articles";
+import { getSnippets } from "../../hygraph/snippets";
 import { Article } from "type";
-import styles from "./page.module.scss";
+import { Snippet } from "type";
+import { RecentSnippets } from "../components/recentSnippetCard/RecentSnippets";
 
 export default async function Home() {
 	const articlesData: Promise<Article[]> = await getArticles();
 	const articles = await articlesData;
+
+	const snippetData: Promise<Snippet[]> = await getSnippets();
+	const snippets = await snippetData;
 	return (
 		<>
 			<HomePageBanner />
@@ -27,7 +31,7 @@ export default async function Home() {
 			<SliderCard articles={articles} />
 			<ContainerButton buttonText="Explorar Articulos" route="/articles" />
 			<TitleComponent title="Snippets Recientes" />
-			<RecentSnippets />
+			<RecentSnippets snippets={snippets} />
 			<ContainerButton buttonText="Explorar Snippets" route="/snippets" />
 			<TitleComponent title="Our Team" />
 			<OurTeam />

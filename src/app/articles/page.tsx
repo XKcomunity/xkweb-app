@@ -2,15 +2,19 @@ import { getArticles } from "../../../hygraph/articles";
 import { ReusableBanner } from "@/components/stateless/reusable-banner/ReusableBanner";
 import { ArticleCard } from "@/components/stateless/articles-card/ArticleCard";
 import { TitleComponent } from "@/components/stateless/titles/TitleComponent";
-import { RecentSnippets } from "@/components/stateless/recent-snippets/RecentSnippets";
 import ContainerButton from "@/components/stateless/container-button/ContainerButton";
 import styles from "./_articles.module.scss";
 import Link from "next/link";
-import { Article } from "type";
+import { Article, Snippet } from "type";
+import { getSnippets } from "hygraph/snippets";
+import { RecentSnippets } from "@/components/recentSnippetCard/RecentSnippets";
 
 export default async function Articles() {
 	const articlesData: Promise<Article[]> = await getArticles();
 	const articles = await articlesData;
+
+	const snippetData: Promise<Snippet[]> = await getSnippets();
+	const snippets = await snippetData;
 
 	return (
 		<>
@@ -33,8 +37,10 @@ export default async function Articles() {
 				))}
 			</main>
 			<TitleComponent title="Snippets Recientes" />
-			<RecentSnippets />
-			<ContainerButton buttonText="Explorar Snippets" route="/snippets" />
+			<RecentSnippets snippets={snippets} />
+			<div style={{ marginBottom: 100 }}>
+				<ContainerButton buttonText="Explorar Snippets" route="/snippets" />
+			</div>
 		</>
 	);
 }

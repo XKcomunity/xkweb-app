@@ -1,5 +1,4 @@
 import { ReusableBanner } from "@/components/stateless/reusable-banner/ReusableBanner";
-import { RecentSnippets } from "@/components/stateless/recent-snippets/RecentSnippets";
 import { TitleComponent } from "@/components/stateless/titles/TitleComponent";
 import SnippetsByTech from "./SnippetsByTech";
 
@@ -15,9 +14,8 @@ export default async function SnippetTech({
 	return (
 		<>
 			<ReusableBanner title={snippetsTech} />
-			<SnippetsByTech  />
+			<SnippetsByTech />
 			<TitleComponent title="Snippets Recientes" />
-			<RecentSnippets />
 		</>
 	);
 }
