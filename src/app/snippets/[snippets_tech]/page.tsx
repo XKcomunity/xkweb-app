@@ -15,7 +15,7 @@ export default async function SnippetTech({
 		<>
 			<ReusableBanner title={snippetsTech} />
 			<SnippetsByTech />
-			<TitleComponent title="Snippets Recientes" />
+			<div style={{ marginBottom: 100 }}></div>
 		</>
 	);
 }

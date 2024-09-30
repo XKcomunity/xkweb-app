@@ -11,7 +11,7 @@ import { getArticles } from "../../hygraph/articles";
 import { getSnippets } from "../../hygraph/snippets";
 import { Article } from "type";
 import { Snippet } from "type";
-import { RecentSnippets } from "../components/recentSnippetCard/RecentSnippets";
+import { RecentSnippets } from "../components/stateless/recentSnippetCard/RecentSnippet";
 
 export default async function Home() {
 	const articlesData: Promise<Article[]> = await getArticles();

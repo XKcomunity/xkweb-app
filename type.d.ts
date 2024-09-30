@@ -22,7 +22,7 @@ type Snippet = {
 	subTitle: string;
 	code: { json: ElementNode };
 	slug: string;
-	video: { url: string };
+	videolink: { url: string };
 };
 
 type Article = {

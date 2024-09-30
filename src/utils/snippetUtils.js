@@ -12,13 +12,13 @@ function extractCodeBlocks(description) {
     const codeBlocks = [];
 
     for (const match of description.matchAll(/```([\w\W]+?)```/g)) {
-      const [fullMatch, code] = match;
-      const title = code.match(/title:(.*)/)?.[1]?.trim() ?? "Code";
-      codeBlocks.push({ title, code });
+        const [fullMatch, code] = match;
+        const title = code.match(/title:(.*)/)?.[1]?.trim() ?? "Code";
+        codeBlocks.push({ title, code });
     }
 
     return codeBlocks;
-  }
+}
 
 function splitTextIntoBlocks(description, codeBlocks) {
     const textBlocks = [];
@@ -26,20 +26,20 @@ function splitTextIntoBlocks(description, codeBlocks) {
     for (const [index, block] of description.split(/```([\w\W]+?)```/).entries()) {
         const isCodeBlock = index % 2 === 1;
         if (isCodeBlock) {
-        const matchingBlockIndex = codeBlocks.findIndex(({ code }) => code === block);
-        if (matchingBlockIndex !== -1) {
-            textBlocks.push(codeBlocks[matchingBlockIndex]);
-            codeBlocks.splice(matchingBlockIndex, 1);
-        }
+            const matchingBlockIndex = codeBlocks.findIndex(({ code }) => code === block);
+            if (matchingBlockIndex !== -1) {
+                textBlocks.push(codeBlocks[matchingBlockIndex]);
+                codeBlocks.splice(matchingBlockIndex, 1);
+            }
         } else if (block) {
-        textBlocks.push(block);
+            textBlocks.push(block);
         }
     }
 
     return textBlocks;
 }
 
-    export function splitDescriptionIntoBlocks(description) {
+export function splitDescriptionIntoBlocks(description) {
     // Extraer los bloques de código de la descripción
     const codeBlocks = extractCodeBlocks(description);
 

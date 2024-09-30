@@ -7,7 +7,7 @@ import styles from "./_articles.module.scss";
 import Link from "next/link";
 import { Article, Snippet } from "type";
 import { getSnippets } from "hygraph/snippets";
-import { RecentSnippets } from "@/components/recentSnippetCard/RecentSnippets";
+import { RecentSnippets } from "@/components/stateless/recentSnippetCard/RecentSnippet";
 
 export default async function Articles() {
 	const articlesData: Promise<Article[]> = await getArticles();
