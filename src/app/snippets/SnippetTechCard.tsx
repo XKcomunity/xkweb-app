@@ -1,8 +1,15 @@
 import Image from "next/image";
 import styles from "./_snippetPage.module.scss";
 import Link from "next/link";
+import { Technology } from "type"; // Assuming "type" is the correct path
 
-export default function SnippetTechCard({ technologies }) {
+type SnippetCategoryLinksProps = {
+	technologies: Technology[]; // technologies should be an array of Technology objects
+};
+
+export default function SnippetTechCard({
+	technologies,
+}: SnippetCategoryLinksProps) {
 	return (
 		<>
 			{technologies.map((tech) => (
