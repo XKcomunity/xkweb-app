@@ -4,12 +4,12 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 type Props = {
-	imageArticle?: string;
-	imageAuthor?: string;
+	imageArticle: string;
+	imageAuthor: string;
 	title: string;
 	shortDescription: string;
+	author: string; // Make sure this is a string
 	level: string;
-	author: string;
 };
 
 export const ArticleCard = ({
@@ -17,8 +17,8 @@ export const ArticleCard = ({
 	imageAuthor,
 	title,
 	shortDescription,
-	level,
 	author,
+	level,
 }: Props) => {
 	const truncatedShortDescription =
 		shortDescription.length > 130
