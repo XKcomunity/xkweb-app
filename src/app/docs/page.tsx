@@ -23,7 +23,7 @@ export default function Docs() {
 					control de misión personal, listo para guiarte a través del cosmos
 					digital. ¡Así que abróchate el cinturón, prepara tu casco y prepárate
 					para el despegue en tu viaje interestelar de aprendizaje! Y recuerda,
-					en este espacio, el único límite es tu curiosidad."
+					en este espacio, el único límite es tu curiosidad.&quot;
 				</h3>
 			</main>
 
@@ -42,7 +42,7 @@ export default function Docs() {
 					control de misión personal, listo para guiarte a través del cosmos
 					digital. ¡Así que abróchate el cinturón, prepara tu casco y prepárate
 					para el despegue en tu viaje interestelar de aprendizaje! Y recuerda,
-					en este espacio, el único límite es tu curiosidad."
+					en este espacio, el único límite es tu curiosidad.&quot;
 				</h3>
 			</article>
 

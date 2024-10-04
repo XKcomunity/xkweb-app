@@ -6,7 +6,7 @@ import SyntaxHighlighter from "react-syntax-highlighter/dist/esm/default-highlig
 import { irBlack } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import styles from "./article-slug.module.scss";
 import { SecondaryTitleBlack } from "@/components/stateless/titles/SecondaryTitleBlack";
-
+import Image from "next/image";
 type Props = {
 	params: { slug: string };
 };
@@ -60,8 +60,8 @@ export default async function Article({ params }: Props) {
 								</blockquote>
 							),
 							img: ({ src }) => (
-								<img
-									src={src}
+								<Image
+									src={src as string}
 									alt="Snippet image"
 									className={styles.image}
 									width={600}
